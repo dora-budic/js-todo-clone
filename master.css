@@ -3,3 +3,83 @@
   margin: 0;
   padding: 0;
 }
+
+#template {
+  display: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #ad1eee, #c34fec, #d474eb, #e196ec, #ebb7ed);
+}
+
+.container {
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 30px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.container h1 {
+  color: #AD1EEE;
+  align-self: center;
+}
+
+.container ul {
+  color: #6D6D6D;
+  font-size: 20px;
+  margin-left: 40px;
+  list-style: none;
+}
+
+.container ul > li {
+  margin: 5px 0;
+}
+
+.container ul > li:before {
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f058";
+  padding-right: 5px;
+}
+
+.container .actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .actions input {
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  border: 2px solid #ebb7ed;
+  border-radius: 5px;
+  display: none;
+}
+
+.container .actions input.active {
+  display: inline-block;
+}
+
+.container .actions input:focus {
+  outline-color: #AD1EEE;
+}
+
+.container .actions .add {
+  color: #fff;
+  background-color: #FFBA74;
+  border-radius: 100%;
+  padding: 8px 10px;
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
