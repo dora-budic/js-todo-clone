@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-#template {
-  display: none;
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -30,6 +26,7 @@ body {
 .container h1 {
   color: #AD1EEE;
   align-self: center;
+  margin-bottom: 30px;
 }
 
 .container ul {
@@ -41,11 +38,6 @@ body {
 
 .container ul > li {
   margin: 5px 0;
-}
-
-.container ul > li:before {
-  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f058";
-  padding-right: 5px;
 }
 
 .container .actions {
@@ -82,4 +74,57 @@ body {
   bottom: 0;
   left: 50%;
   transform: translate(-50%,50%);
+  cursor: pointer;
+}
+
+.container .actions .add:hover {
+  background-color: #FFAC58;
+}
+
+#template {
+  display: none;
+}
+
+.list-element {
+  display: flex;
+  align-items: center;
+}
+
+i.fa-check-circle {
+  color: #ebb7ed;
+  margin-right: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+i.fa-check-circle:hover {
+  color: #d474eb;
+}
+
+input.change {
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  border: 2px solid #ebb7ed;
+  border-radius: 5px;
+  display: none;
+}
+
+input.change:focus {
+  outline-color: #AD1EEE;
+}
+
+
+span.edit {
+  border-radius: 5px;
+  background-color: #d474eb;
+  padding: 5px 7px;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+span.edit:hover {
+  background-color: #c34fec;
 }
